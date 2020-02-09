@@ -212,13 +212,18 @@ body {
 
 .core3{
     background: #02feff;
-    ba
+    position: absolute;
     width: 100%;
     height: 80px;
     border: 10px rgba(2, 255, 255, 0.15) solid;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+}
+
+.margin{
+    margin: 20px; 
+    margin-bottom: 50px; 
 }
 
 .big_core {
@@ -651,7 +656,7 @@ body {
     float: right;
     margin-right: 20px;
     width: 300px;
-    max-height: 100vh;
+    height: auto;
 }
 
 #note_input,
@@ -663,7 +668,7 @@ body {
     resize: none;
     transition: 0.3s;
     width: calc(100% - 15px);
-    height: 40vh;
+    height: 55vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -715,7 +720,7 @@ ul {
     top: 7%;
     /* margin-top: px; */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -732,6 +737,17 @@ ul {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+}
+
+.c_container {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 50px;
 }
 
 .core2 {
@@ -1031,8 +1047,9 @@ ul {
 
 /* Particles / Unique Elements */
 .vline {
+    margin-bottom: 50px;
     width: 0;
-    height: 200px;
+    height: 300px;
     float: left;
     border-left: 1px solid rgba(2, 255, 255, 0.3);
 }
@@ -1137,7 +1154,6 @@ ul {
 }
 
 #particle11 {
-    margin-right: 30px;
     margin-top: 3px;
     width: 330px;
     float: right;
@@ -1147,7 +1163,7 @@ ul {
 #particle12 {
     float: left;
     height: 352px;
-    margin-top: -40px;
+    margin-top: -50px;
     border-color: rgba(2, 255, 255, 0.5);
 }
 
