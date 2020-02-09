@@ -668,7 +668,7 @@ body {
     resize: none;
     transition: 0.3s;
     width: calc(100% - 15px);
-    height: 55vh;
+    height: auto;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -702,11 +702,11 @@ body {
 }
 
 /* Arc Reactor */
-ul {
+/* ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 #arc_container {
     position: fixed;
