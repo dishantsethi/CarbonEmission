@@ -176,7 +176,7 @@ body {
 }
 
 #main {
-    position: relative;
+    position: absolute;
     z-index: 1;
     color: #02feff;
     padding: 0px;
@@ -213,8 +213,9 @@ body {
 .core3{
     background: #02feff;
     position: absolute;
+    bottom: -135%;
     width: 100%;
-    height: 80px;
+    height: 90px;
     border: 10px rgba(2, 255, 255, 0.15) solid;
     margin-left: 0px;
     margin-right: 0px;
@@ -740,9 +741,9 @@ body {
 }
 
 .c_container {
-    width: auto;
+    width: fit-content;
     height: auto;
-    border-radius: 50%;
+    
     position: absolute;
     margin-left: 50px;
     margin-top: 50px;
@@ -1228,4 +1229,10 @@ body {
 .feed a.title:focus {
     color: #02feff !important;
     text-decoration: none;
+}
+
+
+h5:hover{
+    border-bottom: 1px solid;
+    width: fit-content;
 }
