@@ -4,3 +4,12 @@ from django.http import HttpResponse
 
 def home_view(request):
     return render(request, "file.html", {})
+
+def full_analysis(request):
+    return render(request, "fullanalysis.html", {})
+
+def sector_wise_analysis(request):
+    return render(request, "sectorwise.html", {})
+
+def prediction(request):
+    return render(request, "prediction.html", {})

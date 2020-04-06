@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" >
+    <br>
+    <h3 class="text-color" id = "heading" >
+        CO<sub>2</sub> emissions by fuel
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">At a global level we see that early industrialisation was dominated by the use of solid fuel. Coal-fired power at an industrial-scale was the first to emerge in Europe and North America during the 1700s.</p>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">Asia’s energy remains dominant in solid fuel consumption, and has notably higher cement contributions relative to other regions.</p>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">Africa also has more notable emissions from cement and flaring; however, its key sources of emissions are a diverse mix between solid, liquid and gas.</p>
+    <iframe src="https://ourworldindata.org/grapher/CO2-by-source?stackMode=absolute" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+    <h3 class="text-color" id = "heading" >
+        Emissions of other greenhouse gases
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Carbon dioxide is not the only greenhouse gas of concern for global warming and climatic change. There are a range of greenhouse gases, which include methane, nitrous oxide, and a range of smaller concentration trace gases such as the so-called group of ‘F-gases’. </p>
+    <iframe src="https://ourworldindata.org/grapher/global-warming-potential-of-greenhouse-gases-over-100-year-timescale-gwp" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+    <h3 class="text-color" id = "heading" >
+        CO<sub>2</sub> Emission by Sectors
+    </h3>
+    <ul style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">
+        <li>Energy (energy, manufacturing and construction industries and fugitive emissions): emissions are inclusive of public heat and electricity production; other energy industries; fugitive emissions from solid fuels, oil and gas, manufacturing industries and construction.</li>
+        <li>Transport: domestic aviation, road transportation, rail transportation, domestic navigation, other transportation.</li>
+        <li>International bunkers: international aviation; international navigation/shipping.
+        </li>
+        <li>Residential, commercial, institutional and AFF: Residential and other sectors.
+        </li>
+        <li>Industry (industrial processes and product use): production of minerals, chemicals, metals, pulp/paper/food/drink, halocarbons, refrigeration and air conditioning; aerosols and solvents; semicondutor/electronics manufacture; electrical equipment.
+        </li>    
+        <li>Waste: solid waste disposal; wastewater handling; waste incineration; other waste handling.
+        </li>
+        <li>Agriculture: methane and nitrous oxide emissions from enteric fermentation; manure management; rice cultivation; synthetic fertilizers; manure applied to soils; manure left on pasture; crop residues; burning crop residues, savanna and cultivation of organic soils.
+        </li>
+        <li>Other sources: fossil fuel fires; indirect nitrous oxide from non-agricultural NOx and ammonia; other anthropogenic sources.
+        </li>
+
+    </ul>
+    
+    <iframe src="https://ourworldindata.org/grapher/global-carbon-dioxide-emissions-by-sector" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+    <h3 class="text-color" id = "heading" >
+        Methane (CH<sub>4</sub>) emissions by sector
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Breakdown of total global methane (CH₄) emissions by sector, measured in tonnes of carbon-dioxide equivalents (CO₂e). Carbon dioxide
+        equivalents measures the total greenhouse gas potential of the full combination of gases, weighted by their relative warming impacts.</p>
+    <iframe src="https://ourworldindata.org/grapher/methane-emissions-by-sector-gg-coe" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+</div>
+{% endblock %}

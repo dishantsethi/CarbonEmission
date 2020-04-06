@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carbon Emission Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <div class="container-fluid" id="main">
+        <div id="leftmenu" style="margin-top: 20px;">
+    
+            <div id="date_time">
+                <div id="date" class="semi_arc e4">
+                    <div class="semi_arc_2 e4_1">
+                        <div class="counterspin4"></div>
+                    </div>
+                    <div style="font-size: 40px; margin-top: 25px;" id="date_num"></div>
+                    <div style="font-size: 25px;" id="month"></div>
+                </div>
+    
+                <div id="time" class="arc e1">
+                    <div style="font-size: 23px; margin-left: -10px; margin-top: 23px;" id="time_num"></div>
+                    <div style="font-size: 15px; margin-left: 40px; margin-top: -30px;" id="second"></div>
+                    <div style="font-size: 17px; margin-top: 10px;" id="day"></div>
+                </div>
+            </div>
+        </div>
+        
+      
+    <header class="text-color text-center">
+        Global Carbon Emissions
+    </header>
+
+    </div>
+    
+    
+    {% block content %}
+
+    {% endblock %}
+    
+    <footer>
+        <div>
+            <div class="text-center" style="margin-top: 8px; margin-bottom: 5px;">
+                Major Project By
+            </div>
+    
+            <div >
+                <div class="row text-center" >
+                  <div class="col-sm">
+                    <a href="https://www.instagram.com/aditya.x186/?hl=en"> Aditya Singhal: A2305216318 </a>
+                  </div>
+                  <div class="col-sm">
+                    <a href="https://www.linkedin.com/in/dishant-sethi-0b1006157/"> Dishant Sethi: A2305216328 </a>
+                  </div>
+                  <div class="col-sm">
+                    <a href="https://www.linkedin.com/in/rudrakshi-srivastava-402815174/"> Rudrakshi: A2305216336 </a>
+                  </div>
+                </div>
+              </div>
+    
+    </div> 
+    </footer>
+
+    <script>
+        var month = new Array();
+        month[0] = "January";
+        month[1] = "February";
+        month[2] = "March";
+        month[3] = "April";
+        month[4] = "May";
+        month[5] = "June";
+        month[6] = "July";
+        month[7] = "August";
+        month[8] = "September";
+        month[9] = "October";
+        month[10] = "November";
+        month[11] = "December";
+        var d = new Date();
+        var n = month[d.getMonth()];
+        document.getElementById("month").innerHTML = n;
+        var date = d.getDate();
+        document.getElementById("date_num").innerHTML = date; 
+
+        var t = d.getHours();
+        var min = d.getMinutes();
+        var s = d.getSeconds();
+
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+        var day = weekday[d.getDay()];
+
+        document.getElementById("time_num").innerHTML = t + ":" + min;
+        document.getElementById("second").innerHTML = s;
+        document.getElementById("day").innerHTML = day;
+    </script>
+</body>
+</html>

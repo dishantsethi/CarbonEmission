@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container" >
+        <br>
+        <h3 class="text-color" id = "heading" >
+            Annual total CO<sub>2</sub> emissions, by world region
+        </h3>
+        <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">The visualisation presents the long-run perspective on global CO2 emissions. Global emissions increased from 2 billion tonnes of carbon dioxide in 1900 to over 36 billion tonnes 115 years later.</p>
+
+        <iframe src="https://ourworldindata.org/grapher/annual-co-emissions-by-region" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+        <h3 class="text-color" id = "heading" >
+            Who emits the most CO<sub>2</sub>
+        </h3>
+        <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">The same data is also explorable by country and over time in the interactive map. </p>
+        <iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+    </div>
+    
+{% endblock %}

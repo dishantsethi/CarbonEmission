@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container" >
+    <br>
+    <h3 class="text-color" id = "heading" >
+        Future emissios scenarios
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">Potential future scenarios of global greenhouse gas emissions (measured in gigatonnes of carbon dioxide equivalents), based on data from Climate Action Tracker.</p>
+    <ul style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">
+        <li style="margin-bottom: 10px;">No climate policies: projected future emissions if no climate policies were implemented; this would result in an estimated 4.1-4.8°C warming by 2100 (relative to pre-industrial temperatures)</li>
+        <li style="margin-bottom: 10px;">Current climate policies: projected warming of 3.1-3.7°C by 2100 based on current implemented climate policies
+        </li>
+        <li style="margin-bottom: 10px;">National pledges: if all countries achieve their current targets/pledges set within the Paris climate agreement, it’s estimated average warming by 2100 will be 2.6-3.2°C. This will go well beyond the overall target of the Paris Agreement to keep warming “well below 2°C”.
+        </li>
+        <li style="margin-bottom: 10px;">2°C consistent: there are a range of emissions pathways that would be compatible with limiting average warming to 2°C by 2100. This would require a significant increase in ambition of the current pledges within the Paris Agreement.
+        </li>
+        <li style="margin-bottom: 10px;">1.5°C consistent: there are a range of emissions pathways that would be compatible with limiting average warming to 1.5°C by 2100. However, all would require a very urgent and rapid reduction in global greenhouse gas emissions.
+        </li>
+    </ul>
+    <img src="{% static 'img.png' %}" style="width: 75%; height: 600px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;">
+
+    <h3 class="text-color" id = "heading" >
+        1.5degree emissions pathways
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Robbie Andrew, senior researcher at the Center for International Climate Research (CICERO), mapped out the global emissions reduction scenarios necessary to limit global average warming to 1.5°C.</p>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">What becomes clear is that the later the peak in emissions, the steeper the curve: the longer we wait, the more rapid emissions reductions need to be. </p>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">If emissions had peaked around 2000, for example, global emissions would have had to fall at an average of around 3% per year. As of 2019, we can only emit around 340Gt CO2 before we exceed the 1.5°C budget – this is equal to around 8 years of current emissions.28,29 If we peaked emissions today, we would have to reduce emissions by around 15% each year through to 2040 to limiting warming to 1.5°C without negative emissions technologies.</p>
+    
+    <iframe src="https://ourworldindata.org/grapher/co2-mitigation-15c?time=2008..2100"" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+    <h3 class="text-color" id = "heading" >
+        2.0degree emissions pathways
+    </h3>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">In the section above we looked at the emissions reductions necessary to limit warming to 1.5°C. How does this change when we extend the carbon budget to one which limits warming to 2°C?</p>
+    <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Robbie Andrew, senior researcher at the Center for International Climate Research (CICERO) also mapped out the mitigation curves for a 2°C target. </p>    
+    <iframe src="https://ourworldindata.org/grapher/co2-mitigation-2c" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+
+</div>
+{% endblock %}
