@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="container" >
     <br>
@@ -9,13 +9,21 @@
     <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">At a global level we see that early industrialisation was dominated by the use of solid fuel. Coal-fired power at an industrial-scale was the first to emerge in Europe and North America during the 1700s.</p>
     <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">Asia’s energy remains dominant in solid fuel consumption, and has notably higher cement contributions relative to other regions.</p>
     <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">Africa also has more notable emissions from cement and flaring; however, its key sources of emissions are a diverse mix between solid, liquid and gas.</p>
-    <iframe src="https://ourworldindata.org/grapher/CO2-by-source?stackMode=absolute" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
-
+    
+    <h6>CO<sub>2</sub> Emission by fuel, World</h6>
+        <img src="{% static 'fuelworld.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 50px; margin-left: 15%;">
+    
+    <h6>CO<sub>2</sub> Emission by fuel, India</h6>
+        <img src="{% static 'fuelindia.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 100px; margin-left: 15%;">    
+    
+    
     <h3 class="text-color" id = "heading" >
         Emissions of other greenhouse gases
     </h3>
     <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Carbon dioxide is not the only greenhouse gas of concern for global warming and climatic change. There are a range of greenhouse gases, which include methane, nitrous oxide, and a range of smaller concentration trace gases such as the so-called group of ‘F-gases’. </p>
-    <iframe src="https://ourworldindata.org/grapher/global-warming-potential-of-greenhouse-gases-over-100-year-timescale-gwp" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+    
+    <h6>Global Warming potential of greenhouse gases</h6>
+        <img src="{% static '1.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 50px; margin-left: 15%;">
 
     <h3 class="text-color" id = "heading" >
         CO<sub>2</sub> Emission by Sectors
@@ -38,13 +46,16 @@
 
     </ul>
     
-    <iframe src="https://ourworldindata.org/grapher/global-carbon-dioxide-emissions-by-sector" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+    <h6>CO<sub>2</sub> Emission by sector, World</h6>
+        <img src="{% static '2.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 50px; margin-left: 15%;">
 
     <h3 class="text-color" id = "heading" >
         Methane (CH<sub>4</sub>) emissions by sector
     </h3>
     <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">Breakdown of total global methane (CH₄) emissions by sector, measured in tonnes of carbon-dioxide equivalents (CO₂e). Carbon dioxide
         equivalents measures the total greenhouse gas potential of the full combination of gases, weighted by their relative warming impacts.</p>
-    <iframe src="https://ourworldindata.org/grapher/methane-emissions-by-sector-gg-coe" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
+    
+        <h6>Methane Emission by Sector, World</h6>
+        <img src="{% static '3.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 50px; margin-left: 15%;">
 </div>
 {% endblock %}

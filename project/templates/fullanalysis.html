@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
     <div class="container" >
@@ -8,15 +8,28 @@
             Annual total CO<sub>2</sub> emissions, by world region
         </h3>
         <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif;">The visualisation presents the long-run perspective on global CO2 emissions. Global emissions increased from 2 billion tonnes of carbon dioxide in 1900 to over 36 billion tonnes 115 years later.</p>
-
-        <iframe src="https://ourworldindata.org/grapher/annual-co-emissions-by-region" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
-
+        <h6>Annual Total CO<sub>2</sub> Emission from 1751 to 2017</h6>
+        <img src="{% static 'annualco2.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 10px; margin-left: 15%;">
+    
+        <div style="margin-left: 145px;">
+        <img src="{% static 'annual2017.png' %}" style="height: 294px; margin: 10px;">
+        <img src="{% static 'annual2016.png' %}" style="height: 294px; margin: 10px;">
+        <img src="{% static 'annual2015.png' %}" style="height: 294px; margin: 10px;">
+        </div>
+        <div style="margin-left: 145px; margin-bottom: 100px;">
+        <img src="{% static 'annual2014.png' %}" style="height: 294px; margin: 10px;">
+        <img src="{% static 'annual2013.png' %}" style="height: 294px; margin: 10px;">
+        <img src="{% static 'annual2012.png' %}" style="height: 294px; margin: 10px;">
+        </div>
+                
         <h3 class="text-color" id = "heading" >
             Who emits the most CO<sub>2</sub>
         </h3>
         <p style="color:darkgray ; font-family: Arial, Helvetica, sans-serif; text-align: center;">The same data is also explorable by country and over time in the interactive map. </p>
-        <iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country" style="width: 75%; height: 500px; border: 0px none; margin-bottom: 100px; margin-left: 12.5%;"></iframe>
-
+        <h6>World Map view of CO<sub>2</sub> Emission of 2017</h6>
+        <img src="{% static 'map.png' %}" style="width: 70%; height: 375px; border: 0px none; margin-bottom: 100px; margin-left: 15%;">
+        
     </div>
+    
     
 {% endblock %}

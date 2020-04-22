@@ -563,7 +563,7 @@ body {
 }
 
 .c_container {
-    width: fit-content;
+    width: 60%;
     height: auto;
     
     position: absolute;
@@ -1058,3 +1058,15 @@ h5:hover{
     border-bottom: 1px solid;
     width: fit-content;
 }
+
+h6{
+    text-align: center;
+    color: darkgray;
+    text-decoration: underline;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color:white;
+  }
